@@ -30,3 +30,8 @@ int main()
     }
 
 }
+
+12 1200.00 Andre eduardo Soares campos bragansa IIII
+34 800.00 Bruno
+73 -20000.00 Carlos
+58 100 Davi Eduardo
