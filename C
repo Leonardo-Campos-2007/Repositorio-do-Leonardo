@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    FILE * fp;
+
+    fp = fopen("bd.txt", "r");
+
+    if(fp == NULL)
+    {
+
+        printf("ERRO: arquivo não foi aberto\n");
+        exit(1);
+
+    }
+
+    int Conta;
+    float Saldo;
+    char Nome[50];
+
+
+    for(int i=0; i < 4; i++)
+    {
+
+        fscanf(fp, "%d %f %[^\n]\n", &Conta, &Saldo, Nome);
+        printf("%d\t%f\t%s\n", Conta, Saldo, Nome);
+
+    }
+
+}
